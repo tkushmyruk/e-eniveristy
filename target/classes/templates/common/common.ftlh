@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<#nested />
+<#nested/>
 </body>
 </html>
 </#macro>

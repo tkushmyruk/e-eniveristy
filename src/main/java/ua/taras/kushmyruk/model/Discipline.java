@@ -3,12 +3,14 @@ package ua.taras.kushmyruk.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "discipline")
+@Table(name = "e_discipline")
 public class Discipline {
 
     @Id
     @Column(name = "discipline_name")
     private String disciplineName;
+    @Column(name = "disciplineScore")
+    private Integer score;
     @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "faculty_name")
     private Faculty faculty;

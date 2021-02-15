@@ -16,7 +16,57 @@ public class Passport {
     private String passportNumber;
     @Column(name = "passport_issue_date")
     private LocalDate issueDate;
+    @Column(name = "registration_office_name")
+    private String registrationOfficeName;
     @OneToOne(cascade = {CascadeType.REFRESH})
     @JoinColumn(name = "user_id")
     private Student student;
+
+    public Long getPassportId() {
+        return passportId;
+    }
+
+    public void setPassportId(Long passportId) {
+        this.passportId = passportId;
+    }
+
+    public String getPassportSeria() {
+        return passportSeria;
+    }
+
+    public void setPassportSeria(String passportSeria) {
+        this.passportSeria = passportSeria;
+    }
+
+    public String getPassportNumber() {
+        return passportNumber;
+    }
+
+    public void setPassportNumber(String passportNumber) {
+        this.passportNumber = passportNumber;
+    }
+
+    public LocalDate getIssueDate() {
+        return issueDate;
+    }
+
+    public void setIssueDate(LocalDate issueDate) {
+        this.issueDate = issueDate;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public String getRegistrationOfficeName() {
+        return registrationOfficeName;
+    }
+
+    public void setRegistrationOfficeName(String registrationOfficeName) {
+        this.registrationOfficeName = registrationOfficeName;
+    }
 }

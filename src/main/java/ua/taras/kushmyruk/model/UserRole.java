@@ -1,5 +1,12 @@
 package ua.taras.kushmyruk.model;
 
-public enum UserRole {
-    USER, ADMIN
+import org.springframework.security.core.GrantedAuthority;
+
+public enum UserRole  implements GrantedAuthority {
+    USER, ADMIN;
+
+    @Override
+    public String getAuthority() {
+        return name();
+    }
 }

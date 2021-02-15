@@ -14,6 +14,7 @@ public class University {
     @OneToMany(cascade = {CascadeType.REFRESH}, mappedBy = "university")
     private List<Faculty> faculties;
     @OneToOne(cascade = {CascadeType.REFRESH}, mappedBy = "university")
-    private Address  mainHull;
+    private Address mainHull;
+
 
 }

@@ -4,5 +4,7 @@
     <br/>
     <h2>E-University</h2>
     <div> some information</div>
+    <a href="/faculties">faculties</a>
+    <a href="/login">Login page</a>
 
 </@com.main>
