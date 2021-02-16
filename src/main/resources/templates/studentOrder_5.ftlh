@@ -3,11 +3,11 @@
     <h2>${facultyName}</h2>
     <div>Add Certification Information</div>
     <form method="post">
-    <div><label>First Name : <input type="text" name="firstName"></label></div>
-    <div><label>Middle Name : <input type="text" name="middleName"></label></div>
-    <div><label>Last Name : <input type="text" name="lastName"></label></div>
+    <div><label>Certificate number: <input type="text" name="certificateNumber"></label></div>
+    <div><label>School name : <input type="text" name="schoolName"></label></div>
+    <div><label>End date of school : <input type="date" name="endDate"></label></div>
     <#list disciplines as discipline>
-        <div><label>${discipline} : <input type="number" max="200" name="${discipline.disciplineName}"></label></div>
+        <div><label>${discipline.disciplineName} :  <input type="number" max="200" name="scores"></label></div>
     </#list>
         <button type="submit">Save</button>
     </form>

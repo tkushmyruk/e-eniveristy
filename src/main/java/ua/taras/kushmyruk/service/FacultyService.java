@@ -1,5 +1,6 @@
 package ua.taras.kushmyruk.service;
 
+import ua.taras.kushmyruk.model.Discipline;
 import ua.taras.kushmyruk.model.Faculty;
 
 import java.util.List;
@@ -9,6 +10,10 @@ public interface FacultyService {
 
     Faculty getFacultyByName(String facultyName);
 
+    List<Discipline> getReqiuredDisciplines(String facultyName);
+
     void addFaculty(String name, int freePlaces, int scholarshipPlaces,
                     String city, String street, String building, String disciplines);
+
+
 }

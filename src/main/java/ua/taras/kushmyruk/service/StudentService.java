@@ -1,5 +1,8 @@
 package ua.taras.kushmyruk.service;
 
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 import java.time.LocalDate;
 
 public interface StudentService {
@@ -11,6 +14,11 @@ public interface StudentService {
     void addAddressInfo(String city, String street, String building, String apartment, String postCode);
 
     void addPassport(String passportSeria, String passportNumber, String registrationOffice, LocalDate issueDate);
+
+    void addCertificate(String schoolName, String certificateNumber,
+                        LocalDate endSchoolDate, String[] scores);
+
+    String addCertificateAndPassportPhoto(MultipartFile passportFile, MultipartFile certificateFile);
 
     String submitStudentOrder();
 }

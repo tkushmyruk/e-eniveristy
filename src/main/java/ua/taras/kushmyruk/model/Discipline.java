@@ -18,18 +18,35 @@ public class Discipline {
     @JoinColumn(name= "certificate_id")
     private Certificate certificate;
 
-    public Discipline(String disciplineName) {
-        this.disciplineName = disciplineName;
-    }
-
-    public Discipline() {
-    }
-
     public String getDisciplineName() {
         return disciplineName;
     }
 
     public void setDisciplineName(String disciplineName) {
         this.disciplineName = disciplineName;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
+    }
+
+    public Faculty getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(Faculty faculty) {
+        this.faculty = faculty;
+    }
+
+    public Certificate getCertificate() {
+        return certificate;
+    }
+
+    public void setCertificate(Certificate certificate) {
+        this.certificate = certificate;
     }
 }

@@ -31,6 +31,16 @@ public class FacultyController {
         return "facultyRedact";
     }
 
+    @GetMapping("/redaction/{facultyName}")
+    public String changeFaculty(@PathVariable String facultyName, Model model){
+        Faculty faculty =  facultyService.getFacultyByName(facultyName);
+        model.addAttribute("faculty", faculty);
+        model.addAttribute("disciplines", faculty.getRequiredDisciplines());
+        model.addAttribute("address", faculty.getFacultyAddress());
+        return "changeFaculty";
+    }
+
+
 
     @GetMapping("/{facultyName}")
     public String getFaculty(@PathVariable String facultyName, Model model){

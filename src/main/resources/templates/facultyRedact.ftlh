@@ -8,11 +8,14 @@
     <div>
         <#list faculties as faculty>
             <div>
-              <div><label>Faculty name: <input type="text" name="facultyName" value="${faculty.facultyName}"></label></div>
+              <div><label>${faculty.facultyName}</label></div>
+                <a href="/faculties/redaction/${faculty.facultyName}">Redact Faculty</a>
             </div>
         </#list>
     </div>
     </form>
+    </br>
+  <div>Add faculty</div>
     <form method="post" action="/faculties/redaction">
         <div><label>Name : <input type="text" name="facultyName"> </label></div>
         <div><label>Free Places : <input type="number" name="freePlaces"> </label></div>

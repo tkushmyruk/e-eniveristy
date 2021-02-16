@@ -6,7 +6,7 @@
     <div><label>Passport Seria : <input type="text" name="passportSeria"></label></div>
     <div><label>Passport Number : <input type="text" name="passportNumber"></label></div>
     <div><label>Registration Office Name : <input type="text" name="registrationOffice"></label></div>
-    <div><label>Issue Date : <input type="datetime-local" name="issueDate"></label></div>
+    <div><label>Issue Date : <input type="date" name="issueDate"></label></div>
         <button type="submit">Save</button>
     </form>
 </@com.main>

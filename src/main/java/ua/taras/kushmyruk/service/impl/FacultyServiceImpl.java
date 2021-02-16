@@ -1,5 +1,6 @@
 package ua.taras.kushmyruk.service.impl;
 
+import org.hibernate.Hibernate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ua.taras.kushmyruk.model.Address;
@@ -34,7 +35,16 @@ public class FacultyServiceImpl implements FacultyService {
 
     @Override
     public Faculty getFacultyByName(String facultyName){
-        return facultyRepository.findByFacultyName(facultyName);
+        Faculty faculty = facultyRepository.findByFacultyName(facultyName);
+        Hibernate.initialize(faculty.getRequiredDisciplines());
+        Hibernate.initialize(faculty.getFacultyAddress());
+        return faculty ;
+    }
+
+    @Override
+    public List<Discipline> getReqiuredDisciplines(String facultyName) {
+        Faculty faculty = facultyRepository.findByFacultyName(facultyName);
+        return  faculty.getRequiredDisciplines().stream().collect(Collectors.toList());
     }
 
     @Override
@@ -45,7 +55,8 @@ public class FacultyServiceImpl implements FacultyService {
         faculty.setFacultyName(name);
         faculty.setFreePlaces(freePlaces);
         faculty.setScholarshipPlaces(scholarshipPlaces);
-        Set<Discipline> facultyDisciplines = Arrays
+        facultyRepository.save(faculty);
+        List<Discipline> facultyDisciplines = Arrays
                 .stream(disciplines.split(";"))
                 .distinct()
                 .map(s -> {
@@ -53,19 +64,22 @@ public class FacultyServiceImpl implements FacultyService {
                     if(disciplineFromBd == null) {
                         Discipline discipline = new Discipline();
                         discipline.setDisciplineName(s.trim());
+                        discipline.setFaculty(faculty);
                         disciplineRepository.save(discipline);
                         return discipline;
                     }
                     return disciplineFromBd;
                 })
-                .collect(Collectors.toSet());
-        faculty.setRequiredDisciplines(facultyDisciplines);
+                .collect(Collectors.toList());
         Address address = new Address();
         address.setCity(city);
         address.setStreet(street);
         address.setBuilding(building);
+        address.setFaculty(faculty);
         addressRepository.save(address);
-        faculty.setFacultyAddress(address);
-        facultyRepository.save(faculty);
     }
+
+//    public String redactFaculty(){
+//
+//    }
 }

@@ -19,7 +19,7 @@ public class Faculty {
     @JoinColumn(name = "univeristy_name")
     private University university;
     @OneToMany(cascade = {CascadeType.REFRESH}, mappedBy = "faculty")
-    private Set<Discipline> requiredDisciplines;
+    private List<Discipline> requiredDisciplines;
     @OneToMany(cascade = {CascadeType.REFRESH}, mappedBy = "faculty")
     private List<Student> candidates;
     @OneToOne(cascade = {CascadeType.REFRESH})
@@ -66,11 +66,11 @@ public class Faculty {
         this.university = university;
     }
 
-    public Set<Discipline> getRequiredDisciplines() {
+    public List<Discipline> getRequiredDisciplines() {
         return requiredDisciplines;
     }
 
-    public void setRequiredDisciplines(Set<Discipline> requiredDisciplines) {
+    public void setRequiredDisciplines(List<Discipline> requiredDisciplines) {
         this.requiredDisciplines = requiredDisciplines;
     }
 

@@ -4,11 +4,12 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ua.taras.kushmyruk.model.Faculty;
+import org.springframework.web.multipart.MultipartFile;
 import ua.taras.kushmyruk.model.User;
 import ua.taras.kushmyruk.service.FacultyService;
 import ua.taras.kushmyruk.service.StudentService;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 @Controller
@@ -46,12 +47,21 @@ public class StudentOrderController {
         return "studentOrder_4";
     }
 
-    @GetMapping
+    @GetMapping("/{facultyName}/4")
     public String getCertificateInfo(@PathVariable String facultyName, Model model){
         model.addAttribute("facultyName", facultyName);
-        Faculty faculty = facultyService.getFacultyByName(facultyName);
-        model.addAttribute("disciplines", faculty.getRequiredDisciplines());
+        model.addAttribute("disciplines", facultyService.getReqiuredDisciplines(facultyName));
         return "studentOrder_5";
+    }
+
+    @GetMapping("/{facultyName}/5")
+    public String addCerificateAndPassport(@PathVariable String facultyName, Model model){
+        model.addAttribute("facultyName", facultyName);
+        return "studentOrder_6";
+    }
+    @GetMapping("/submitStudentOrder")
+    public String getEndPage(){
+        return "submitStudentOrder";
     }
 
 
@@ -68,11 +78,12 @@ public class StudentOrderController {
                                  @RequestParam String firstName,
                                  @RequestParam String middleName,
                                  @RequestParam String lastName,
-                                 @RequestParam LocalDate birthDay,
+                                 @RequestParam String dateOfBirth,
                                  @RequestParam String nationality,
                                  @RequestParam String gender
     ){
-        studentService.AddStudentInfo(firstName, middleName, lastName, nationality, gender, birthDay);
+        studentService.AddStudentInfo(firstName, middleName, lastName, nationality, gender,
+                LocalDate.parse(dateOfBirth));
     return "redirect:/student-order/" + facultyName + "/2";
     }
 
@@ -92,8 +103,33 @@ public class StudentOrderController {
                                    @RequestParam String passportSeria,
                                    @RequestParam String passportNumber,
                                    @RequestParam String registrationOffice,
-                                   @RequestParam LocalDate issueDate){
-        studentService.addPassport(passportSeria, passportNumber, registrationOffice, issueDate);
+                                   @RequestParam String issueDate){
+        studentService.addPassport(passportSeria, passportNumber, registrationOffice, LocalDate.parse(issueDate));
         return "redirect:/student-order/" + facultyName + "/4";
     }
+
+    @PostMapping("/{facultyName}/4")
+    public String getCertificateInfo(@PathVariable String facultyName,
+                                     @RequestParam String certificateNumber,
+                                     @RequestParam String schoolName,
+                                     @RequestParam String endDate,
+                                     @RequestParam String ... scores){
+
+     studentService.addCertificate(certificateNumber, schoolName, LocalDate.parse(endDate), scores);
+     return "redirect:/student-order/" + facultyName + "/5";
+    }
+
+    @PostMapping("/{faciltyName}/5")
+    public String addPhotoAndCertificateAndSubmitSO(@RequestParam MultipartFile passportPhotofile,
+                                                    @RequestParam MultipartFile certificatePhotofile){
+        studentService.addCertificateAndPassportPhoto(passportPhotofile, certificatePhotofile);
+        return "redirect:/student-order/submitStudentOrder";
+    }
+
+    @PostMapping("/submitStudentOrder")
+    public String submitFullStudentOrder(){
+        studentService.submitStudentOrder();
+        return "redirect:/";
+    }
+
 }

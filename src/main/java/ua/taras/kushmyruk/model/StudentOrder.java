@@ -12,6 +12,10 @@ public class StudentOrder {
     private Long studentOrderId;
     @Column(name = "issue_date")
     private LocalDate issueDate;
+    @Column(name = "certificate_filename")
+    private String certificateFilename;
+    @Column(name = "passport_filename")
+    private String passportFilename;
     @OneToOne(cascade = {CascadeType.REFRESH}, mappedBy = "studentOrder")
     private Student student;
     @OneToOne(cascade = {CascadeType.REFRESH}, mappedBy = "studentOrder")
@@ -68,5 +72,29 @@ public class StudentOrder {
 
     public void setEducationFrom(EducationFrom educationFrom) {
         this.educationFrom = educationFrom;
+    }
+
+    public LocalDate getIssueDate() {
+        return issueDate;
+    }
+
+    public void setIssueDate(LocalDate issueDate) {
+        this.issueDate = issueDate;
+    }
+
+    public String getCertificateFilename() {
+        return certificateFilename;
+    }
+
+    public void setCertificateFilename(String certificateFilename) {
+        this.certificateFilename = certificateFilename;
+    }
+
+    public String getPassportFilename() {
+        return passportFilename;
+    }
+
+    public void setPassportFilename(String passportFilename) {
+        this.passportFilename = passportFilename;
     }
 }
