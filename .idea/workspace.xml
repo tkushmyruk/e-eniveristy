@@ -2,33 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbfb373c-2751-42bd-8ca1-2f423b2b7e53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/changePassword.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrder.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderAddress.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderCertificate.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderPassport.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderPersonal.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/facultyInfrom.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/messages.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userAccount.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/changeFaculty.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/changePassword.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/changeStudentOrder.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/changeStudentOrderAddress.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/changeStudentOrderCertificate.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/changeStudentOrderPassport.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/changeStudentOrderPersonal.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/facultyInfrom.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/messages.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/userAccount.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/controller/StudentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Notification.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/NotificationRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/StudentOrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/impl/StudentOrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/FacultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/FacultyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Certificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Certificate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Discipline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Discipline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Faculty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Passport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/StudentPersonalInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/StudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/StudentOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/CertificateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/CertificateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/DisciplineRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/DisciplineRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/FacultyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/FacultyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/FacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/FacultyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/changeFaculty.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/changeFaculty.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/faculty.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/faculty.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/facultyRedact.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/facultyRedact.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_2.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_2.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_1.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_1.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_4.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_4.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_5.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_5.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/submitStudentOrder.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/submitStudentOrder.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/studentOrder_2.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/studentOrder_2.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentOrder_6.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentPhotoFiles/a614d2ab-bf04-4b21-8e4e-c45a2a7ad7b0.jpeg-quality-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentPhotoFiles/c54380e8-7f21-4ffe-8cf1-2c7cc77d1a99.jpeg-quality-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/faculty.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/faculty.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/facultyRedact.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/facultyRedact.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/studentOrder_1.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/studentOrder_1.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/studentOrder_4.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/studentOrder_4.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/studentOrder_5.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/studentOrder_5.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/submitStudentOrder.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/submitStudentOrder.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/studentOrder_6.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/controller/FacultyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/controller/FacultyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/controller/StudentOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/controller/StudentOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Certificate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Certificate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Discipline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Discipline.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Faculty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Faculty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Passport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Passport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/Student.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/StudentOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/StudentOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/CertificateRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/CertificateRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/DisciplineRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/DisciplineRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/FacultyRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/FacultyRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/StudentOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/StudentOrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/FacultyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/FacultyService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/StudentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/taras/kushmyruk/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,46 +123,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_6.ftlh">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/facultyAcceptedStudents.ftlh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="90">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/facultyRedact.ftlh">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="30" selection-end-column="54" />
+            <state relative-caret-position="75">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftlh">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/FacultyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/changeFaculty.ftlh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentOrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="125" column="60" selection-start-line="125" selection-start-column="60" selection-end-line="125" selection-end-column="60" />
+            <state relative-caret-position="129">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,28 +153,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/RegistrationController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/CommissionServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="705">
+              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/MainController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentOrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="-1366">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="140" column="12" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="32" />
+            <state relative-caret-position="-2532">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,10 +189,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="242">
+              <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,13 +201,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/FacultyController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="-268">
+              <caret line="93" column="49" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/facultyInfrom.ftlh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Certificate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -190,56 +251,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/EducationFrom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/UniversityController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/common.ftlh" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/UserRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/login.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/configiration/SecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/RegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/AddressRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/FacultyRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Passport.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/startStudentOrder.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common/security.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/faculty.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/PassportRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/CertificateRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_1.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_3.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentOrderRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Certificate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/University.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/DisciplineRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_2.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_6.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/facultyRedact.ftlh" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_4.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Faculty.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_5.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/NotificationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Notification.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_1.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/DisciplineRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/CertificateRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Discipline.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Passport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/CommissionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Certificate.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderCertificate.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderAddress.ftlh" />
         <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/FacultyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/StudentOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_5.ftlh" />
-        <option value="$PROJECT_DIR$/src/test/java/ua/taras/kushmyruk/mkDirTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_6.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/submitStudentOrder.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentOrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/facultyRedact.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/studentOrder_2.ftlh" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/FacultyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/CommissionService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/facultyAcceptedStudents.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/StudentPersonalInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/FacultyRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentOrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/changeFaculty.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/faculty.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/changePassword.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/userAccount.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrder.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderPersonal.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderPassport.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/messages.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Faculty.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/FacultyController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/facultyInfrom.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/CommissionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.java" />
       </list>
     </option>
@@ -435,8 +496,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -546,7 +609,61 @@
       <workItem from="1613421623018" duration="416000" />
       <workItem from="1613498167154" duration="1677000" />
       <workItem from="1613499986541" duration="1231000" />
-      <workItem from="1613502438087" duration="872000" />
+      <workItem from="1613502438087" duration="1665000" />
+      <workItem from="1613540636860" duration="1755000" />
+      <workItem from="1613542446893" duration="1755000" />
+      <workItem from="1613544258596" duration="1778000" />
+      <workItem from="1613546074707" duration="1599000" />
+      <workItem from="1613548069829" duration="1782000" />
+      <workItem from="1613549883904" duration="1468000" />
+      <workItem from="1613551785437" duration="1356000" />
+      <workItem from="1613553635857" duration="1787000" />
+      <workItem from="1613555452726" duration="1733000" />
+      <workItem from="1613557281584" duration="724000" />
+      <workItem from="1613558248962" duration="1528000" />
+      <workItem from="1613562730008" duration="1918000" />
+      <workItem from="1613565525524" duration="205000" />
+      <workItem from="1613565916756" duration="1717000" />
+      <workItem from="1613567714650" duration="1685000" />
+      <workItem from="1613569538434" duration="1484000" />
+      <workItem from="1613571534911" duration="1555000" />
+      <workItem from="1613573361189" duration="1457000" />
+      <workItem from="1613575174162" duration="1725000" />
+      <workItem from="1613576984446" duration="866000" />
+      <workItem from="1613579246577" duration="1771000" />
+      <workItem from="1613581062480" duration="1784000" />
+      <workItem from="1613582873511" duration="1769000" />
+      <workItem from="1613584686318" duration="1630000" />
+      <workItem from="1613588365057" duration="1192000" />
+      <workItem from="1613590202031" duration="1703000" />
+      <workItem from="1613592069378" duration="81000" />
+      <workItem from="1613594582071" duration="1021000" />
+      <workItem from="1613600993366" duration="860000" />
+      <workItem from="1613634431016" duration="1431000" />
+      <workItem from="1613636244668" duration="1450000" />
+      <workItem from="1613716496079" duration="576000" />
+      <workItem from="1613719631303" duration="1624000" />
+      <workItem from="1613721456115" duration="1544000" />
+      <workItem from="1613723274957" duration="1573000" />
+      <workItem from="1613729946006" duration="1586000" />
+      <workItem from="1613733685370" duration="826000" />
+      <workItem from="1613736154857" duration="1365000" />
+      <workItem from="1613737965456" duration="1736000" />
+      <workItem from="1613739777816" duration="1739000" />
+      <workItem from="1613743923585" duration="1483000" />
+      <workItem from="1613752708488" duration="1495000" />
+      <workItem from="1613754456775" duration="1005000" />
+      <workItem from="1613759472912" duration="1728000" />
+      <workItem from="1613761927678" duration="1582000" />
+      <workItem from="1613763967860" duration="1258000" />
+      <workItem from="1613765991776" duration="1595000" />
+      <workItem from="1613767824530" duration="1689000" />
+      <workItem from="1613770623197" duration="133000" />
+      <workItem from="1613803052244" duration="1336000" />
+      <workItem from="1613804889368" duration="1776000" />
+      <workItem from="1613806705077" duration="1569000" />
+      <workItem from="1613808635039" duration="660000" />
+      <workItem from="1613812836551" duration="903000" />
     </task>
     <servers />
   </component>
@@ -559,13 +676,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55781000" />
+    <option name="totallyTimeSpent" value="131924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3891273" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29971388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -574,14 +691,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39276809" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38072288" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.27228916" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="9" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -589,7 +706,7 @@
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Package References" order="15" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.3254364" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.13373494" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -617,485 +734,243 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/EducationFrom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/AddressRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/configiration/SecurityConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1594#1595#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1790#1791#0" expanded="true" />
-            <element signature="e#1825#1826#0" expanded="true" />
-            <element signature="e#1855#1856#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#1940#1941#0" expanded="true" />
-            <element signature="e#1975#1976#0" expanded="true" />
-            <element signature="e#2005#2006#0" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2131#2132#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentOrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="90" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/PassportRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/FacultyRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/CertificateRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/FacultyRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftlh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="11" />
+        <state relative-caret-position="75">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/security.ftlh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="131">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/login.ftlh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/NotificationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="60">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/common.ftlh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/CommissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/StudentOrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#74#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/facultyRedact.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/login.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/submitStudentOrder.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Passport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="64" column="47" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/FacultyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="330">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/repository/DisciplineRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/StudentPersonalInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
-            <element signature="e#1900#1901#0" expanded="true" />
-            <element signature="e#2326#2327#0" expanded="true" />
-            <element signature="e#2355#2356#0" expanded="true" />
-            <element signature="e#2399#2400#0" expanded="true" />
-            <element signature="e#2435#2436#0" expanded="true" />
-            <element signature="e#2473#2474#0" expanded="true" />
-            <element signature="e#2507#2508#0" expanded="true" />
-            <element signature="e#2561#2562#0" expanded="true" />
-            <element signature="e#2607#2608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Certificate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_1.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_3.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="1307" column="19" selection-start-line="1307" selection-start-column="19" selection-end-line="1307" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/taras/kushmyruk/mkDirTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/changeStudentOrder.ftlh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/submitStudentOrder.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_5.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_4.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studentPhotoFiles/a614d2ab-bf04-4b21-8e4e-c45a2a7ad7b0.jpeg-quality-10.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="100" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studentPhotoFiles/c54380e8-7f21-4ffe-8cf1-2c7cc77d1a99.jpeg-quality-10.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/faculty.ftlh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_2.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Discipline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding>
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Faculty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/University.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/StudentOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2260#2261#0" expanded="true" />
-            <element signature="e#2330#2331#0" expanded="true" />
-            <element signature="e#2392#2393#0" expanded="true" />
-            <element signature="e#2435#2436#0" expanded="true" />
-            <element signature="e#2474#2475#0" expanded="true" />
-            <element signature="e#2538#2539#0" expanded="true" />
-            <element signature="e#2594#2595#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="140" column="12" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_6.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/facultyRedact.ftlh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="30" selection-end-column="54" />
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/changeFaculty.ftlh">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/changePassword.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="105" selection-start-line="5" selection-start-column="105" selection-end-line="5" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_1.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentOrder_2.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderPersonal.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="106" lean-forward="true" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userAccount.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/changeStudentOrderPassport.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentOrderController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/EducationFrom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="125" column="60" selection-start-line="125" selection-start-column="60" selection-end-line="125" selection-end-column="60" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/StudentOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2904#2905#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2986#2987#0" expanded="true" />
+            <element signature="e#3023#3024#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/configiration/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        <state relative-caret-position="180">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#590#591#0" expanded="true" />
@@ -1104,22 +979,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="739">
+          <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Discipline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/messages.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Faculty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#2610#2611#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/faculty.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-473">
+          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/controller/FacultyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="225">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/facultyInfrom.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/model/Certificate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/facultyAcceptedStudents.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/FacultyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2532">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/CommissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/StudentOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1366">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/taras/kushmyruk/service/impl/FacultyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268">
+          <caret line="93" column="49" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

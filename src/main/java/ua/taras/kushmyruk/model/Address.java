@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "passport_id")
+    @Column(name = "address_id")
     private Long addressId;
     @Column(name = "city")
     private String city;
@@ -20,10 +20,10 @@ public class Address {
     @Column(name = "post_code")
     private String postCode;
     @OneToOne(cascade = {CascadeType.REFRESH})
-    @JoinColumn(name = "user_id")
-    private Student student;
+    @JoinColumn(name = "student_order_id")
+    private StudentOrder studentOrder;
     @OneToOne(cascade = {CascadeType.REFRESH})
-    @JoinColumn(columnDefinition = "faculty_name")
+    @JoinColumn(name = "faculty_id")
     private Faculty faculty;
     @OneToOne(cascade = {CascadeType.REFRESH})
     @JoinColumn(name = "university_name")
@@ -77,12 +77,12 @@ public class Address {
         this.postCode = postCode;
     }
 
-    public Student getStudent() {
-        return student;
+    public StudentOrder getStudentOrder() {
+        return studentOrder;
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
+    public void setStudentOrder(StudentOrder studentOrder) {
+        this.studentOrder = studentOrder;
     }
 
     public Faculty getFaculty() {

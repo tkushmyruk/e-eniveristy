@@ -12,19 +12,33 @@ public class StudentOrder {
     private Long studentOrderId;
     @Column(name = "issue_date")
     private LocalDate issueDate;
-    @Column(name = "certificate_filename")
-    private String certificateFilename;
-    @Column(name = "passport_filename")
-    private String passportFilename;
-    @OneToOne(cascade = {CascadeType.REFRESH}, mappedBy = "studentOrder")
-    private Student student;
-    @OneToOne(cascade = {CascadeType.REFRESH}, mappedBy = "studentOrder")
-    private Certificate studentCertificate;
-    @OneToOne(cascade = {CascadeType.REFRESH} , mappedBy = "studentOrder")
+    @Column(name = "is_accepted")
+    private boolean isAccepted;
+    @OneToOne(cascade =  CascadeType.REFRESH, mappedBy = "studentOrder")
+    private StudentPersonalInfo studentPersonalInfo;
+    @OneToOne(cascade =  CascadeType.REFRESH, mappedBy = "studentOrder")
+    private Passport passport;
+    @OneToOne(cascade =  CascadeType.REFRESH, mappedBy = "studentOrder")
+    private Address address;
+    @OneToOne(cascade =  CascadeType.REFRESH, mappedBy = "studentOrder")
+    private Certificate certificate;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+    @ManyToOne(cascade = {CascadeType.REFRESH})
+    @JoinColumn(name = "faculty_id")
     private Faculty faculty;
     @Enumerated
     @Column(name = "education_form")
     private EducationFrom educationFrom;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Long getStudentOrderId() {
         return studentOrderId;
@@ -42,20 +56,12 @@ public class StudentOrder {
         this.issueDate = issuDate;
     }
 
-    public Student getStudent() {
-        return student;
+    public StudentPersonalInfo getStudentPersonalInfo() {
+        return studentPersonalInfo;
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
-    }
-
-    public Certificate getStudentCertificate() {
-        return studentCertificate;
-    }
-
-    public void setStudentCertificate(Certificate studentCertificate) {
-        this.studentCertificate = studentCertificate;
+    public void setStudentPersonalInfo(StudentPersonalInfo studentPersonalInfo) {
+        this.studentPersonalInfo = studentPersonalInfo;
     }
 
     public Faculty getFaculty() {
@@ -82,19 +88,37 @@ public class StudentOrder {
         this.issueDate = issueDate;
     }
 
-    public String getCertificateFilename() {
-        return certificateFilename;
+    public Passport getPassport() {
+        return passport;
     }
 
-    public void setCertificateFilename(String certificateFilename) {
-        this.certificateFilename = certificateFilename;
+    public void setPassport(Passport passport) {
+        this.passport = passport;
     }
 
-    public String getPassportFilename() {
-        return passportFilename;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setPassportFilename(String passportFilename) {
-        this.passportFilename = passportFilename;
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public Certificate getCertificate() {
+        return certificate;
+    }
+
+    public void setCertificate(Certificate certificate) {
+        this.certificate = certificate;
+    }
+
+    public boolean isAccepted() {
+        return isAccepted;
+    }
+
+    public void setAccepted(boolean accepted) {
+        isAccepted = accepted;
     }
 }
+
+

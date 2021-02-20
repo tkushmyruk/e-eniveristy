@@ -1,24 +1,38 @@
 package ua.taras.kushmyruk.service;
 
 import org.springframework.web.multipart.MultipartFile;
+import ua.taras.kushmyruk.model.*;
 
-import java.io.IOException;
 import java.time.LocalDate;
+import java.util.List;
 
 public interface StudentService {
-    void addStudentOrder(Long userId, String facultyName, String educationForm);
+     List<Notification> getNotReadNotification(User user);
 
-    void AddStudentInfo(String firstName, String middleName, String lastName, String nationality,
-                        String gender, LocalDate birthDay);
+     List<Notification> getReadNotification(User user);
 
-    void addAddressInfo(String city, String street, String building, String apartment, String postCode);
+     void readMessage(User user, String isRead);
 
-    void addPassport(String passportSeria, String passportNumber, String registrationOffice, LocalDate issueDate);
+    String checkIsSendedStudentOrder(User user, String facultyName);
 
-    void addCertificate(String schoolName, String certificateNumber,
-                        LocalDate endSchoolDate, String[] scores);
+    StudentPersonalInfo getStudentPersonalInfo(User user, String facultyName);
 
-    String addCertificateAndPassportPhoto(MultipartFile passportFile, MultipartFile certificateFile);
+    void changeStudentPersonalInfo(User user, String facultyName, String firstName, String middleName,
+                                   String lastName, String gender, String nationality, LocalDate dateOfBirth);
 
-    String submitStudentOrder();
+    Address getStudentAddress(User user, String facultyName);
+
+    void changeStudentAddressInfo(User user, String facultyName, String city, String street, String building,
+                                  String apartment, String postcode);
+
+    Passport getStudentPassportInfo(User user, String facultyName);
+
+    void changeStudentPassportInfo(User user,String facultyName, String passportSeria, String passportNumber,
+                                   String registrationOffice, LocalDate issueDate, MultipartFile passportFile);
+
+    Certificate getStudentCertificateInfo(User user, String facultyName);
+
+    void changeStudentCertificateInfo(User user, String facultyName, String schoolName, String certificateNumber,
+                                   LocalDate endSchoolDate, String[] scores, MultipartFile certificateFile);
+    List<StudentOrder> getSO(User u);
 }

@@ -2,11 +2,17 @@ package ua.taras.kushmyruk.model;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
-@Table(name = "e_student")
-public class Student extends User {
+@Table(name = "e_student_info")
+public class StudentPersonalInfo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "student_id")
+    private Long id;
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "middle_name")
@@ -22,13 +28,14 @@ public class Student extends User {
     @OneToOne(cascade = {CascadeType.REFRESH})
     @JoinColumn(name = "student_order_id")
     private StudentOrder studentOrder;
-    @OneToOne(cascade = {CascadeType.REFRESH}, mappedBy = "student")
-    private Address address;
-    @OneToOne(cascade = {CascadeType.REFRESH}, mappedBy = "student")
-    private Passport passport;
-    @ManyToOne(cascade = {CascadeType.REFRESH})
-    @JoinColumn(name = "faculty_name")
-    private Faculty faculty;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -68,30 +75,6 @@ public class Student extends User {
 
     public void setStudentOrder(StudentOrder studentOrder) {
         this.studentOrder = studentOrder;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
-    public Passport getPassport() {
-        return passport;
-    }
-
-    public void setPassport(Passport passport) {
-        this.passport = passport;
-    }
-
-    public Faculty getFaculty() {
-        return faculty;
-    }
-
-    public void setFaculty(Faculty faculty) {
-        this.faculty = faculty;
     }
 
     public String getGender() {

@@ -4,22 +4,12 @@
     <br/>
     <h2 align="center">List of Faculties</h2>
     <h3>Redact faculty</h3>
-    <form method="post" action="/faculties/redaction">
-    <div>
-        <#list faculties as faculty>
-            <div>
-              <div><label>${faculty.facultyName}</label></div>
-                <a href="/faculties/redaction/${faculty.facultyName}">Redact Faculty</a>
-            </div>
-        </#list>
-    </div>
-    </form>
     </br>
   <div>Add faculty</div>
-    <form method="post" action="/faculties/redaction">
+    <form method="post">
         <div><label>Name : <input type="text" name="facultyName"> </label></div>
         <div><label>Free Places : <input type="number" name="freePlaces"> </label></div>
-        <div><label>ScholarshipPlaces : <input type="text" name="scholarshipPlaces"> </label></div>
+        <div><label>ScholarshipPlaces : <input type="number" name="scholarshipPlaces"> </label></div>
         <div>
             <div>Please input required disciplies and split it by ';'</div>
             <label>Disciplines : <input type="text" name="disciplines"> </label>

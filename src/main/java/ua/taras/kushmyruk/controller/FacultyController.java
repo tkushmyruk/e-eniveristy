@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import ua.taras.kushmyruk.model.Faculty;
+import ua.taras.kushmyruk.service.CommissionService;
 import ua.taras.kushmyruk.service.FacultyService;
 
 import java.util.List;
@@ -12,20 +13,22 @@ import java.util.List;
 @RequestMapping("/faculties")
 public class FacultyController {
    private final FacultyService facultyService;
+   private final CommissionService commissionService;
 
-    public FacultyController(FacultyService facultyService) {
+    public FacultyController(FacultyService facultyService, CommissionService commissionService) {
         this.facultyService = facultyService;
+        this.commissionService = commissionService;
     }
 
     @GetMapping
-    public String getListOfFaculty(Model model) {
-        List<Faculty> faculties = facultyService.getAllFaculties();
+    public String getListOfFaculty(Model model, @RequestParam(required = false) String sorting) {
+        List<Faculty> faculties = facultyService.getAllSortedFaculties(sorting);
         model.addAttribute("faculties", faculties);
         return "faculty";
     }
 
     @GetMapping("/redaction")
-    public String redactionFaculty(Model model){
+    public String redactionFaculty( Model model){
         List<Faculty> faculties = facultyService.getAllFaculties();
         model.addAttribute("faculties", faculties);
         return "facultyRedact";
@@ -40,12 +43,20 @@ public class FacultyController {
         return "changeFaculty";
     }
 
-
-
-    @GetMapping("/{facultyName}")
-    public String getFaculty(@PathVariable String facultyName, Model model){
-        return "faculty";
+    @GetMapping("/information/{facultyName}")
+    public String getFacultyInformation(@PathVariable String facultyName, Model model){
+        model.addAttribute("students", facultyService.getFacultyStudentList(facultyName));
+        model.addAttribute("faculty", facultyService.getFacultyByName(facultyName));
+        return "facultyInfrom";
     }
+
+    @GetMapping("/accepted/{facultyName}")
+    public String getAllAcceptedStudents(@PathVariable String facultyName, Model model){
+        model.addAttribute("studentOrders", commissionService.getAcceptedStudentOrder(facultyName));
+        model.addAttribute("faculty", facultyService.getFacultyByName(facultyName));
+        return "facultyAcceptedStudents";
+    }
+
 
     @PostMapping("/redaction")
     public String addFaculty (@RequestParam String facultyName,
@@ -63,4 +74,24 @@ public class FacultyController {
         return "facultyRedact";
     }
 
+    @PostMapping("/redaction/{facultyName}")
+    public String changeFacultyInformation(@PathVariable String facultyName,
+                                           @RequestParam String disciplines,
+                                           @RequestParam String freePlaces,
+                                           @RequestParam String scholarshipPlaces,
+                                           @RequestParam String city,
+                                           @RequestParam String street,
+                                           @RequestParam String building,
+                                           @RequestParam String ... redactedDiscipline
+                                           ){
+        facultyService.redactFaculty(facultyName, Integer.parseInt(freePlaces), Integer.parseInt(scholarshipPlaces),
+                disciplines, city, street, building, redactedDiscipline);
+     return "redirect:/faculties/redaction";
+    }
+
+    @PostMapping("/information/{facultyName}")
+    public String acceptStudents(@PathVariable String facultyName){
+      commissionService.acceptStudents(facultyName);
+      return "redirect:/faculties/accepted/" + facultyName;
+    }
 }

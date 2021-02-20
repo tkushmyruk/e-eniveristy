@@ -18,9 +18,11 @@ public class Passport {
     private LocalDate issueDate;
     @Column(name = "registration_office_name")
     private String registrationOfficeName;
+    @Column(name = "passport_filename")
+    private String passportFilename;
     @OneToOne(cascade = {CascadeType.REFRESH})
-    @JoinColumn(name = "user_id")
-    private Student student;
+    @JoinColumn(name = "student_order_id")
+    private StudentOrder studentOrder;
 
     public Long getPassportId() {
         return passportId;
@@ -54,12 +56,12 @@ public class Passport {
         this.issueDate = issueDate;
     }
 
-    public Student getStudent() {
-        return student;
+    public StudentOrder getStudentOrder() {
+        return studentOrder;
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
+    public void setStudentOrder(StudentOrder studentOrder) {
+        this.studentOrder = studentOrder;
     }
 
     public String getRegistrationOfficeName() {
@@ -68,5 +70,13 @@ public class Passport {
 
     public void setRegistrationOfficeName(String registrationOfficeName) {
         this.registrationOfficeName = registrationOfficeName;
+    }
+
+    public String getPassportFilename() {
+        return passportFilename;
+    }
+
+    public void setPassportFilename(String passportFilename) {
+        this.passportFilename = passportFilename;
     }
 }

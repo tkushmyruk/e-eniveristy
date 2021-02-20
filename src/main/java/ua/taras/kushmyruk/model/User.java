@@ -5,11 +5,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 @Entity
 @Table(name = "e_usr")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,10 +23,22 @@ public class User implements UserDetails {
     private String email;
     @Column(name = "active")
     private boolean active;
+    @OneToMany(cascade = {CascadeType.REFRESH}, mappedBy = "user", fetch = FetchType.EAGER)
+    private List<StudentOrder> studentOrders;
+    @OneToMany(cascade = {CascadeType.REFRESH}, mappedBy = "user")
+    private List<Notification> notifications;
     @ElementCollection(targetClass = UserRole.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn (name = "user_id"))
     @Enumerated
     private Set<UserRole> userRoles;
+
+    public List<StudentOrder> getStudentOrders() {
+        return studentOrders;
+    }
+
+    public void setStudentOrders(List<StudentOrder> studentOrders) {
+        this.studentOrders = studentOrders;
+    }
 
     public boolean isAdmin(){
         return userRoles.contains(UserRole.ADMIN);
@@ -105,5 +117,13 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return isActive();
+    }
+
+    public List<Notification> getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(List<Notification> notifications) {
+        this.notifications = notifications;
     }
 }

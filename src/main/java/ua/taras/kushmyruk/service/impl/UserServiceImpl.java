@@ -41,5 +41,30 @@ public class UserServiceImpl implements UserDetailsService {
          return true;
     }
 
+    public String changePassword(User user, String newPassword, String newEmail){
+        if(user.getPassword().equals(newPassword) && user.getEmail().equals(newEmail)){
+            return "Nothing was changed";
+        }
+        if(!user.getPassword().equals(newPassword) && user.getEmail().equals(newEmail)){
+            user.setPassword(newPassword);
+            userRepository.save(user);
+            return "Password was  successfully changed";
+        }
+        if(user.getPassword().equals(newPassword) && !user.getEmail().equals(newEmail)){
+            user.setEmail(newEmail);
+            userRepository.save(user);
+            return "Email was successfully changed";
+        }
+        if(!user.getPassword().equals(newPassword) && !user.getEmail().equals(newEmail)){
+            user.setPassword(newPassword);
+            user.setEmail(newEmail);
+            userRepository.save(user);
+            return "Password and email was successfully changed";
+
+        }
+        return "Error";
+    }
+
+
 }
 

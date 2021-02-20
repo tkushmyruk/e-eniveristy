@@ -6,5 +6,5 @@
     <div> some information</div>
     <a href="/faculties">faculties</a>
     <a href="/login">Login page</a>
-
+    <a href="/student">Your Account</a>
 </@com.main>

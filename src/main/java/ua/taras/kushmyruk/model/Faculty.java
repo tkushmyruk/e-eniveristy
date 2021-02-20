@@ -7,24 +7,34 @@ import java.util.*;
 @Table(name = "e_faculty")
 public class Faculty {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "faculty_id")
+    private Long id;
     @Column(name = "faculty_name")
     private String facultyName;
     @Column(name = "free_places")
     private int freePlaces;
     @Column(name = "scholarship_places")
     private int scholarshipPlaces;
-    @OneToOne(cascade = {CascadeType.REFRESH})
+    @Column(name = "commission_is_end")
+    private boolean commissionIsEnd;
+    @OneToOne(cascade = {CascadeType.REFRESH}, mappedBy = "faculty")
     private Address facultyAddress;
     @ManyToOne(cascade = {CascadeType.REFRESH})
-    @JoinColumn(name = "univeristy_name")
+    @JoinColumn(name = "university_name")
     private University university;
     @OneToMany(cascade = {CascadeType.REFRESH}, mappedBy = "faculty")
     private List<Discipline> requiredDisciplines;
-    @OneToMany(cascade = {CascadeType.REFRESH}, mappedBy = "faculty")
-    private List<Student> candidates;
-    @OneToOne(cascade = {CascadeType.REFRESH})
-    @JoinColumn(name = "student_order_id")
-    private StudentOrder studentOrder;
+    @OneToMany(cascade = {CascadeType.REFRESH}, mappedBy = "faculty",fetch = FetchType.EAGER)
+    private List<StudentOrder> candidates;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getFacultyName() {
         return facultyName;
@@ -74,19 +84,19 @@ public class Faculty {
         this.requiredDisciplines = requiredDisciplines;
     }
 
-    public List<Student> getCandidates() {
+    public List<StudentOrder> getCandidates() {
         return candidates;
     }
 
-    public void setCandidates(List<Student> candidates) {
+    public void setCandidates(List<StudentOrder> candidates) {
         this.candidates = candidates;
     }
 
-    public StudentOrder getStudentOrder() {
-        return studentOrder;
+    public boolean isCommissionIsEnd() {
+        return commissionIsEnd;
     }
 
-    public void setStudentOrder(StudentOrder studentOrder) {
-        this.studentOrder = studentOrder;
+    public void setCommissionIsEnd(boolean commissionIsEnd) {
+        this.commissionIsEnd = commissionIsEnd;
     }
 }
